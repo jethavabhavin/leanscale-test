@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
+        <attribute code="title" type="string" />
+        <attribute code="subtitle" type="string" />
+        <attribute code="action_url" type="string" />
+        <attribute code="action_title" type="string" />
+        <attribute code="promo_type" type="string" />
+        <attribute code="bg_color" type="string" />
+        <attribute code="text_color" type="string" />
+    </extension_attributes>
+</config>
