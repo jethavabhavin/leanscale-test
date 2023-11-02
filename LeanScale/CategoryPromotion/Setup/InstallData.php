@@ -1,6 +1,8 @@
 <?php
 namespace LeanScale\CategoryPromotion\Setup;
 
+use LeanScale\CategoryPromotion\Model\Attribute\Backend\ColorPicker;
+use LeanScale\CategoryPromotion\Model\Attribute\Backend\Url;
 use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -68,7 +70,7 @@ class InstallData implements InstallDataInterface {
 			[
 				'type' => 'text',
 				'group' => 'Promotion',
-				'backend' => '',
+				'backend' => Url::class,
 				'frontend' => '',
 				'label' => 'Action Url',
 				'input' => 'text',
@@ -124,7 +126,7 @@ class InstallData implements InstallDataInterface {
 			[
 				'type' => 'text',
 				'group' => 'Promotion',
-				'backend' => '',
+				'backend' => ColorPicker::class,
 				'frontend' => '',
 				'label' => 'BG Color',
 				'input' => 'text',
@@ -143,7 +145,7 @@ class InstallData implements InstallDataInterface {
 			[
 				'type' => 'text',
 				'group' => 'Promotion',
-				'backend' => '',
+				'backend' => ColorPicker::class,
 				'frontend' => '',
 				'label' => 'Text Color',
 				'input' => 'text',
@@ -155,6 +157,5 @@ class InstallData implements InstallDataInterface {
 				'default' => null,
 			]
 		);
-
 	}
 }
